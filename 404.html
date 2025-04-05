@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Page Not Found | S.A Glass Co.</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #002e5f;
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    h1 {
+      font-size: 10rem;
+      position: relative;
+      animation: crack 2s ease-in-out infinite alternate;
+    }
+    h2 {
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+    a {
+      padding: 12px 24px;
+      background: #ffce00;
+      color: #002e5f;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #e0b700;
+    }
+    /* Broken Glass Effect */
+    .glass {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.imgur.com/0T9pFrS.png') no-repeat center center/cover;
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: 0;
+    }
+    @keyframes crack {
+      0% { transform: rotate(0deg) scale(1); }
+      100% { transform: rotate(2deg) scale(1.02); }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="glass"></div>
+
+  <h1>404</h1>
+  <h2>Broken Glass... Broken Link!</h2>
+  <p>Looks like the page you're looking for shattered into pieces. Let’s help you get back home safely!</p>
+  <a href="/">Back to Home</a>
+
+</body>
+</html>
